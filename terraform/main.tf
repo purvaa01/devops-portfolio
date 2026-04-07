@@ -5,14 +5,23 @@ terraform {
       version = "5.99.1"
     }
   }
+
+  backend "s3" {
+    bucket = "purva-terraform-state-bucket"   # create manually once
+    key    = "portfolio/terraform.tfstate"
+    region = "ap-south-1"
+  }
 }
 provider "aws" {
     region = "ap-south-1"
 }
-
+//for the sake of s3 uniqueness
+resource "random_id" "suffix" {
+  byte_length = 4
+}
 //added s3 bucket
 resource "aws_s3_bucket" "portfolio" {
-  bucket = "purva-portfolio-devopss"
+  bucket = "purva-portfolio-${random_id.suffix.hex}"
 }
 
 //enabling static web hosting
