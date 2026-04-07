@@ -36,7 +36,11 @@ jobs:
       - name: Upload to S3
         run: |
           aws s3 sync frontend/dist/ s3://devops-portfolio-2026 --delete
-       
+
+      - name: Debug Distribution ID
+        run: |
+            echo "Dist ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}"
+            
       - name: Invalidate CloudFront
         run: |
           aws cloudfront create-invalidation \
