@@ -36,9 +36,9 @@ jobs:
       - name: Upload to S3
         run: |
           aws s3 sync frontend/dist/ s3://devops-portfolio-2026 --delete
-
+       
       - name: Invalidate CloudFront
         run: |
           aws cloudfront create-invalidation \
-          --distribution-id YOUR_DISTRIBUTION_ID \
+          --distribution-id CLOUDFRONT_DISTRIBUTION_ID \
           --paths "/*"
