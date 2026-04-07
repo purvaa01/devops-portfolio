@@ -62,30 +62,6 @@ resource "aws_s3_bucket_policy" "portfolio" {
   })
 }
 
-# Upload all files
-resource "aws_s3_object" "portfolio_files" {
-  for_each = fileset("../frontend/dist", "**/*")
-
-  bucket = aws_s3_bucket.portfolio.id
-  key    = each.value
-  source = "../frontend/dist/${each.value}"
-
-  etag = filemd5("../frontend/dist/${each.value}")
-
-  content_type = lookup(
-    {
-      "html" = "text/html"
-      "css"  = "text/css"
-      "js"   = "application/javascript"
-      "png"  = "image/png"
-      "jpg"  = "image/jpeg"
-      "svg"  = "image/svg+xml"
-    },
-    split(".", each.value)[length(split(".", each.value)) - 1],
-    "application/octet-stream"
-  )
-}
-
 # CloudFront Distribution (UPDATED with OAI)
 resource "aws_cloudfront_distribution" "portfolio_cdn" {
   origin {
