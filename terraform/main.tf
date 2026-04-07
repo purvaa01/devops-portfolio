@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "purva-terraform-state-bucket"   # create manually once
+    bucket = "purva-terraform-state-bucket-123"   # create manually once
     key    = "portfolio/terraform.tfstate"
     region = "ap-south-1"
   }
