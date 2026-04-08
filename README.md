@@ -1,73 +1,105 @@
-# React + TypeScript + Vite
+#  DevOps-Powered Portfolio Deployment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+A fully automated DevOps project that deploys a personal portfolio website using Infrastructure as Code (Terraform) and a CI/CD pipeline (GitHub Actions) on AWS.  
+The system eliminates manual deployment by automating build, upload, and cache invalidation.
 
-Currently, two official plugins are available:
+---
+## Live Demo:
+Link : https://d2k58avw000f5j.cloudfront.net
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Project Overview
+- Built and deployed a static portfolio website on AWS S3
+- Configured CloudFront for global content delivery and caching
+- Implemented Terraform for infrastructure provisioning
+- Designed a CI/CD pipeline using GitHub Actions
+- Automated cache invalidation after every deployment
+- Eliminated manual upload and deployment steps
 
-## React Compiler
+---
+##  Architecture
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+GitHub → GitHub Actions → Terraform → AWS S3 → CloudFront → Users
 
-## Expanding the ESLint configuration
+##  Flow (How It Works)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Developer pushes code to GitHub
+2. GitHub Actions pipeline is triggered
+3. Pipeline performs:
+    - Install dependencies
+    - Build project (`npm run build`)
+4. Terraform provisions/updates AWS infrastructure (S3 + CloudFront)
+5. Built files are uploaded to S3 bucket
+6. CloudFront cache invalidation is triggered
+7. Updated website is served globally via CloudFront
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Category              | Tools/Technologies |
+|---------------------|------------------|
+| Frontend            | React, Tailwind CSS |
+| Cloud               | AWS S3, CloudFront |
+| Infrastructure IaC  | Terraform |
+| CI/CD               | GitHub Actions |
+| Version Control     | Git, GitHub |
+| Scripting           | YAML |
+
+---
+
+## What is Covered in This Project
+
+- Static website hosting on AWS S3
+- CDN configuration using CloudFront
+- Infrastructure provisioning using Terraform
+- CI/CD pipeline automation
+- Cache invalidation handling
+- End-to-end deployment automation
+- Real-world DevOps workflow (Code → Build → Deploy → Serve)
+
+---
+
+## Future Improvements
+
+1. Add custom domain with HTTPS (Route 53 + ACM)
+2. Implement monitoring & logging (CloudWatch / alerts)
+
+---
+
+## Folder Structure
+    devops-portfolio/
+    │
+    ├── .github/
+    │   └── workflows/
+    │       └── deploy.yaml        # GitHub Actions CI/CD pipeline
+    │
+    ├── aws/                       # AWS-related configs/scripts (if any)
+    ├── frontend/                  # React frontend application
+    ├── terraform/                 # Infrastructure as Code (Terraform)
+    │
+    ├── .gitignore
+    ├── awscliv2.zip               # AWS CLI (local setup reference)
+    ├── README.md
+
+
+---
+
+## How to Clone the Repository
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+
+cd your-repo-name
+
 ```
+## Conclusion
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+This project demonstrates a complete DevOps workflow by integrating
+Infrastructure as Code with CI/CD automation to achieve a fully hands-off deployment process.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Every code push triggers an automated pipeline that builds, deploys, and updates the application
+without any manual intervention — showcasing real-world DevOps practices.
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+ Built as part of my DevOps learning journey to gain hands-on experience with real-world deployment automation.
