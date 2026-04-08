@@ -100,6 +100,8 @@ Infrastructure as Code with CI/CD automation to achieve a fully hands-off deploy
 
 Every code push triggers an automated pipeline that builds, deploys, and updates the application
 without any manual intervention — showcasing real-world DevOps practices.
----
 
- Built as part of my DevOps learning journey to gain hands-on experience with real-world deployment automation.
+
+Built as part of my DevOps learning journey to gain hands-on experience with real-world deployment automation.
+
+---
