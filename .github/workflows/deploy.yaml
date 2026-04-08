@@ -36,10 +36,6 @@ jobs:
       - name: Upload to S3
         run: |
           aws s3 sync frontend/dist/ s3://devops-portfolio-2026 --delete
-          
-      - name: Debug AWS Identity
-        run: |
-         aws sts get-caller-identity
          
       - name: Debug Distribution ID
         run: |
@@ -48,5 +44,5 @@ jobs:
       - name: Invalidate CloudFront
         run: |
           aws cloudfront create-invalidation \
-          --distribution-id CLOUDFRONT_DISTRIBUTION_ID \
+          --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
           --paths "/*"
