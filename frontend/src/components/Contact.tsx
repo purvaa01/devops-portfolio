@@ -19,7 +19,7 @@ const links = [
   },
   {
     label: "View Resume",
-    href: "/purva_w_devops.pdf",
+    href: "/pw_resume.pdf",
     icon: FiFileText,
   },
 ];
