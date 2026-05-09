@@ -79,20 +79,6 @@ const Hero = () => {
             <span className="bg-gray-800 px-3 py-1 rounded-md">📚 Books</span>
           </div>
 
-          {/* BUTTONS */}
-          <div className="flex gap-4 flex-wrap">
-            <button className="bg-cyan-500 text-black px-5 py-2 rounded-lg font-medium text-sm hover:opacity-90">
-              View Resume
-            </button>
-
-            <button className="bg-gray-800 px-4 py-2 rounded-lg text-sm hover:bg-gray-700">
-              GitHub
-            </button>
-
-            <button className="bg-gray-800 px-4 py-2 rounded-lg text-sm hover:bg-gray-700">
-              LinkedIn
-            </button>
-          </div>
         </div>
 
       </div>

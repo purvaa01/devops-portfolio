@@ -3,6 +3,11 @@ import { FiAward, FiExternalLink } from "react-icons/fi";
 
 const certs = [
   {
+          title: "Devops and Cloud Computing",
+          issuer: "Physics Wallah",
+          link: "/Devops_Certificate.pdf",
+          },
+  {
     title: "Crash Course: Kubernetes For Absolute Beginners",
     issuer: "KodeKloud",
     link: "https://learn.kodekloud.com/user/certificate/2ec9a098-5d2b-488e-a19f-a728f7329908",
@@ -12,6 +17,7 @@ const certs = [
         issuer: "KodeKloud",
         link: "https://learn.kodekloud.com/user/certificate/69ae2847-a3eb-45b4-a029-5f50d8bd0506"
         },
+
     ];
 
 const Certifications = () => {

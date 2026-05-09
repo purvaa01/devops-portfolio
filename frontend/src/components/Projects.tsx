@@ -3,6 +3,12 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
+      title: "LogGuard (Log Operation System)",
+      description: "Built a production-style log management and monitoring system that automates log cleanup, archival, and disk usage monitoring using Linux, Bash scripting, AWS S3, and cron jobs. Simulated real-world DevOps operations by implementing automated alerts, scheduled tasks, and cloud-based log archival for operational reliability and storage management.",
+      tech: ["Linux", "Bash Scripting", "AWS EC2", "Amazon S3", "Cron Jobs", "GitHub"],
+      github: "https://github.com/purvaa01/LogGuard",
+      },
+  {
     title: "DeploySafe",
     description:
       "A production-grade CI/CD pipeline with automated Docker builds, Kubernetes deployments, and real-time monitoring. Features blue-green deployment strategies, automated rollbacks via health checks, and a Grafana dashboard for infrastructure observability across staging and production environments.",
@@ -14,8 +20,8 @@ const projects = [
     description:
       "This very portfolio — a modern, responsive website built with React and Tailwind CSS, deployed via GitHub Actions to AWS with Terraform-managed infrastructure. Showcases clean component architecture, smooth animations, and a fully automated CI/CD pipeline from commit to production.",
     tech: ["React", "Tailwind", "Terraform", "AWS", "GitHub Actions"],
-    github: "#",
-    demo: "#",
+    github: "https://github.com/purvaa01/devops-portfolio",
+
   },
 ];
 
