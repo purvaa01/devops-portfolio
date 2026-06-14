@@ -19,7 +19,7 @@ const links = [
   },
   {
     label: "View Resume",
-    href: "/Purva_resume.pdf",
+    href: "/resume.pdf",
     icon: FiFileText,
   },
 ];
