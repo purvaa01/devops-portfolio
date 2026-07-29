@@ -11,7 +11,6 @@ import {
   SiGrafana,
   SiGit,
   SiGithub,
-  SiAnsible,
   SiYaml,
   SiLinux,
 } from "react-icons/si";
