@@ -10,9 +10,8 @@ const projects = [
       },
   {
     title: "DeploySafe",
-    description:
-      "A production-grade CI/CD pipeline with automated Docker builds, Kubernetes deployments, and real-time monitoring. Features blue-green deployment strategies, automated rollbacks via health checks, and a Grafana dashboard for infrastructure observability across staging and production environments.",
-    tech: ["Docker", "Kubernetes", "Jenkins", "AWS", "Prometheus", "Grafana"],
+    description: "DeploySafe is a production-inspired end-to-end DevOps project that automates application delivery using Jenkins, Docker, Kubernetes, Terraform, and ArgoCD. It implements CI/CD, GitOps, automated deployments, health checks, rollbacks, and real-time monitoring with Prometheus and Grafana, demonstrating modern DevOps practices for reliable and scalable software delivery.",
+      tech: ["Python", "FastAPI", "Docker", "Kubernetes", "Jenkins", "Terraform", "ArgoCD", "AWS", "Prometheus", "Grafana", "GitHub Actions", "Helm"],
     github: "https://github.com/purvaa01/DeploySafe-app",
   },
   {

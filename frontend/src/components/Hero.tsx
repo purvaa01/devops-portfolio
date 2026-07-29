@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
 const roles = [
-  "DevOps Engineer",
-  "Cloud Enthusiast",
-  "Automation Lover",
-  "CI/CD Builder",
+  "DevOps Learner",
+  "Cloud Explorer",
+  "Building Real-World Projects",
+  "Always Learning Something New",
 ];
 
 const Hero = () => {
@@ -42,7 +42,7 @@ const Hero = () => {
         <div className="flex justify-center md:order-1">
           <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-gray-700 shadow-[0_0_30px_rgba(34,211,238,0.15)]">
             <img
-              src="/linkedinshort.jpeg"
+              src="/Purva_Blazer_one.png"
               alt="profile"
               className="w-full h-full object-cover"
             />
@@ -52,11 +52,11 @@ const Hero = () => {
         {/* TEXT */}
         <div className="max-w-xl md:order-2">
           <p className="text-cyan-400 text-sm font-mono mb-2">
-            Hi, I'm
+            Hey, I'm
           </p>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-3 tracking-tight">
-            Purva Wankhede
+            Purva!
           </h2>
 
           <h2 className="text-cyan-400 font-mono text-lg mb-4">
@@ -64,11 +64,11 @@ const Hero = () => {
           </h2>
 
           <p className="text-gray-400 leading-relaxed mb-6">
-           Recent CS graduate from Fergusson College, Pune — building a career in DevOps & Cloud.
-           I’m a curious learner who’s always exploring something new.
+            Recent CS graduate from Fergusson College, Pune, currently trying to convince computers to work together without breaking everything. 😄
 
-           I focus on hands-on learning by building real-world projects and gaining practical experience.
-           I enjoy understanding how systems work behind the scenes and continuously improving them step by step.
+            I'm diving into the world of DevOps & Cloud, where most of my time is spent building projects, fixing bugs I created five minutes earlier, and learning something new every day.
+
+            When I'm not working on a project, you'll probably find me reading novels, listening to music, experimenting with new tech. I enjoy learning by building, staying curious, and celebrating the little wins that come after hours of debugging.
 
           </p>
 

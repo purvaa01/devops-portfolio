@@ -1,19 +1,34 @@
 import { motion } from "framer-motion";
 import {
-  SiDocker, SiKubernetes, SiJenkins, SiGithubactions,
-  SiTerraform, SiPython, SiGnubash,
-  SiPrometheus, SiGrafana, SiGit, SiGithub,
+  SiDocker,
+  SiKubernetes,
+  SiJenkins,
+  SiGithubactions,
+  SiTerraform,
+  SiPython,
+  SiGnubash,
+  SiPrometheus,
+  SiGrafana,
+  SiGit,
+  SiGithub,
+  SiAnsible,
+  SiYaml,
+  SiLinux,
 } from "react-icons/si";
-import { FaAws } from "react-icons/fa";
+import { FaTerminal } from "react-icons/fa";
+import { FaAws, FaWindows } from "react-icons/fa";
+
+
 
 const categories = [
   {
-    title: "DevOps Tools",
+    title: "DevOps & CI/CD",
     skills: [
       { name: "Docker", icon: SiDocker },
       { name: "Kubernetes", icon: SiKubernetes },
       { name: "Jenkins", icon: SiJenkins },
       { name: "GitHub Actions", icon: SiGithubactions },
+      { name: "Ansible", icon: FaTerminal },
     ],
   },
   {
@@ -24,14 +39,15 @@ const categories = [
     ],
   },
   {
-    title: "Programming",
+    title: "Programming & Scripting",
     skills: [
       { name: "Python", icon: SiPython },
       { name: "Bash", icon: SiGnubash },
+      { name: "YAML", icon: SiYaml },
     ],
   },
   {
-    title: "Monitoring",
+    title: "Monitoring & Observability",
     skills: [
       { name: "Prometheus", icon: SiPrometheus },
       { name: "Grafana", icon: SiGrafana },
@@ -42,6 +58,13 @@ const categories = [
     skills: [
       { name: "Git", icon: SiGit },
       { name: "GitHub", icon: SiGithub },
+    ],
+  },
+  {
+    title: "Operating Systems",
+    skills: [
+      { name: "Linux", icon: SiLinux },
+      { name: "Windows", icon: FaWindows },
     ],
   },
 ];
