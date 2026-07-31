@@ -2,18 +2,18 @@ import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 
 const projects = [
-  {
+    {
+        title: "DeploySafe",
+        description: "DeploySafe is a production-inspired end-to-end DevOps project that automates application delivery using Jenkins, Docker, Kubernetes, Terraform, and ArgoCD. It implements CI/CD, GitOps, automated deployments, health checks, rollbacks, and real-time monitoring with Prometheus and Grafana, demonstrating modern DevOps practices for reliable and scalable software delivery.",
+        tech: ["Python", "FastAPI", "Docker", "Kubernetes", "Jenkins", "Terraform", "ArgoCD", "AWS", "Prometheus", "Grafana", "GitHub Actions", "Helm"],
+        github: "https://github.com/purvaa01/DeploySafe-app",
+    },
+    {
       title: "LogGuard (Log Operation System)",
       description: "Built a production-style log management and monitoring system that automates log cleanup, archival, and disk usage monitoring using Linux, Bash scripting, AWS S3, and cron jobs. Simulated real-world DevOps operations by implementing automated alerts, scheduled tasks, and cloud-based log archival for operational reliability and storage management.",
       tech: ["Linux", "Bash Scripting", "AWS EC2", "Amazon S3", "Cron Jobs", "GitHub"],
       github: "https://github.com/purvaa01/LogGuard",
       },
-  {
-    title: "DeploySafe",
-    description: "DeploySafe is a production-inspired end-to-end DevOps project that automates application delivery using Jenkins, Docker, Kubernetes, Terraform, and ArgoCD. It implements CI/CD, GitOps, automated deployments, health checks, rollbacks, and real-time monitoring with Prometheus and Grafana, demonstrating modern DevOps practices for reliable and scalable software delivery.",
-      tech: ["Python", "FastAPI", "Docker", "Kubernetes", "Jenkins", "Terraform", "ArgoCD", "AWS", "Prometheus", "Grafana", "GitHub Actions", "Helm"],
-    github: "https://github.com/purvaa01/DeploySafe-app",
-  },
   {
     title: "DevOps Portfolio",
     description:
