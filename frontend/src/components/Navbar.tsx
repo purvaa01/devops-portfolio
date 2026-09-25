@@ -32,7 +32,7 @@ const Navbar = () => {
   useEffect(() => {
     const sections = navItems
         .map((item) => document.querySelector(item.href))
-        .filter(Boolean);
+        .filter((section): section is Element => section !== null);
 
     const observer = new IntersectionObserver(
         (entries) => {
