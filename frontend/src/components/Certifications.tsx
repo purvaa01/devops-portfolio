@@ -33,7 +33,7 @@ const Certifications = () => {
           transition={{ duration: 0.4 }}
           className="mb-12"
         >
-          <p className="text-cyan-400 font-mono text-sm mb-2">04.</p>
+          <p className="text-cyan-400 font-mono text-sm mb-2">05.</p>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-3">
             Certifications

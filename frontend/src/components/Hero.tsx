@@ -64,9 +64,7 @@ const Hero = () => {
           </h2>
 
           <p className="text-gray-400 leading-relaxed mb-6">
-            Recent CS graduate from Fergusson College, Pune, currently trying to convince computers to work together without breaking everything. 😄
-
-            I'm diving into the world of DevOps & Cloud, where most of my time is spent building projects, fixing bugs I created five minutes earlier, and learning something new every day.
+            Recent Computer Science graduate from Fergusson College, Pune, with hands-on experience in DevOps and Cloud through internships and personal projects. I enjoy building CI/CD pipelines, working with Docker and Kubernetes, automating infrastructure with Terraform, and exploring AWS. Most of my learning happens by building things, breaking them, figuring out why they broke, and fixing them. I'm passionate about automation, troubleshooting, and continuously improving my technical skills as I grow as a DevOps engineer.
 
             When I'm not working on a project, you'll probably find me reading novels, listening to music, experimenting with new tech. I enjoy learning by building, staying curious, and celebrating the little wins that come after hours of debugging.
 
